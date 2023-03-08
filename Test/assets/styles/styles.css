@@ -1,0 +1,67 @@
+
+@font-face {
+    src: url("/assets/fonts/Zeyada-Regular.ttf");
+    font-family: zeyada;
+}
+
+
+/* Nav */
+
+.nav {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+.navbar {
+    background-color: #914574;
+    padding: 1.5rem 1rem;
+}
+#navbar li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/*Page Header*/
+#page_heading {
+    margin-top: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+#page_heading .row {
+    margin-top: 6em;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 42px;
+    font-family: "zeyada";
+}
+
+.subtitle {
+    font-size: 24px;
+    text-align: left;
+}
+
+
+/*Products Grid*/
+.grid-display {
+    text-align: center;
+}
+
+.grid-display .card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.card-img-top {
+    height: 100%;
+}
