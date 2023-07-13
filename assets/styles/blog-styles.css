@@ -10,52 +10,146 @@
     background-image: url(/assets/images/blogs/5-Ingredients-That-Changed-My-Cooking/ingredients-banner-1.jpg);
     background-size: cover;
     background-position: 0 57%;
-    height: 350px;
+    height: 360px;
+    background-repeat: no-repeat;
 }
 
 .blog-title {
     font-family: "Indie-Flower";
-    font-size: 75px;
     color: white;
-    margin-top: 0.8em;
-    padding-left: 45%;
+    padding-left: 25%;
     text-align: left;
+    font-size: 35px;
 }
 .blog-header {
     width: 100% !important;
 }
+#page_heading {
+    background-position: -90px 57%;
+}
+
+@media only screen and (min-width: 390px){
+    .blog-title  {
+        padding-left: 30%;
+        font-size: 42px;
+    }
+    #page_heading {
+        background-position: -30px 57%;
+    }
+}
+
+@media only screen and (min-width: 430px){
+    .blog-title  {
+        padding-left: 30%;
+    }
+    #page_heading {
+        background-position: -30px 57%;
+    }
+}
+
+@media only screen and (min-width: 490px){
+    .blog-title  {
+        padding-left: 35%;
+    }
+    #page_heading {
+        background-position: 0px 57%;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    .blog-title  {
+        padding-left: 40%;
+        font-size: 60px;
+    }
+    #page_heading {
+        background-position: 0px 57%;
+    }
+}
+
+@media only screen and (min-width: 1130px){
+    .blog-title  {
+        padding-left: 40%;
+        font-size: 60px;
+    }
+    #page_heading {
+        background-position: 0px 57%;
+    }
+}
+
+@media only screen and (min-width: 1290px){
+    .blog-title  {
+        padding-left: 40%;
+        font-size: 75px;
+    }
+    #page_heading {
+        background-position: 0px 57%;
+    }
+}
+
+@media only screen and (max-width: 1158px){
+    .blog-title #line2::after {
+        content: "\a";
+        white-space: pre;
+    }
+    .blog-title #line3 {
+        padding-left: 25%;
+    }
+}
+
+
+
 
 
 /*Section Nav*/
 #sections .row {
     justify-content: center;
-    padding-left: 6em;
-    padding-right: 6em;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.section-nav {
-    height: 10em;
+.article-nav__btn {
     text-align: center;
     font-family: "Indie-Flower";
-    font-size: 30px;
+    max-height: 260px;
 }
-.section-nav .section-nav__title {
+.article-nav__btn .article-nav__title {
     font-family: "Indie-Flower";
     font-size: 30px;
 }
 
-.section-nav__img {
-    width: 105%;
-    height: 100%;
-    object-fit: none;
+.article-nav__img {
     border-radius: 15px;
+    max-width: -webkit-fill-available;
+    max-height: inherit;
+    height: 12em;
+    object-fit: cover;
+    width: 100%;
 }
-.section-nav__img:hover {
-    transform: translateY(-15px);
+.article-nav__img:hover {
+    transform: translateY(-6px);
     background-image: -moz-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);
     background-image: -webkit-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);
     background-image: -ms-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);  
     opacity:0.7; 
+}
+
+@media only screen and (max-width: 1158px){
+    .blog-title #line2::after {
+        content: "\a";
+        white-space: pre;
+    }
+    .blog-title #line3 {
+        padding-left: 25%;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    #sections .row {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -76,8 +170,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 25em;
-    width: 800px;
+    max-height: 20em;
+    width: 70%;
     object-fit: none;
     object-position: center;
+    border-radius: 15px;
 }
