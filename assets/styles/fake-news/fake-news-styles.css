@@ -1,0 +1,180 @@
+.logo {
+    width: 70px;
+}
+
+.navbar .container-fluid {
+    padding-left: 0px !important;
+    margin-top: 10px;
+}
+
+.article-header {
+    height: 8em;
+    margin-top: 14.5em;
+}
+
+.faded-bg {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    margin-top: 16.2em;
+}
+
+/*Blog*/
+#page_heading {
+    background-image: url(/assets/images/fake-news/school_elementary_banner.png);
+    background-size: cover;
+    background-position: 0 57%;
+    height: 360px;
+    background-repeat: no-repeat;
+}
+
+.news-title {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.news-text {
+    color: white;
+    text-align: left;
+    
+}
+
+
+
+/*Section Nav*/
+#sections .row {
+    justify-content: center;
+    margin-bottom: 4em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article-nav__btn {
+    text-align: center;
+    font-family: "Indie-Flower";
+    max-height: 260px;
+}
+.article-nav__btn .article-nav__title {
+    font-family: "Indie-Flower";
+    font-size: 30px;
+}
+
+.article-nav__img {
+    border-radius: 15px;
+    max-width: -webkit-fill-available;
+    max-height: inherit;
+    height: 12em;
+    object-fit: cover;
+    width: 100%;
+}
+.article-nav__img:hover {
+    transform: translateY(-6px);
+    background-image: -moz-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);  
+    opacity:0.7; 
+}
+
+@media only screen and (max-width: 1158px){
+    .blog-title #line2::after {
+        content: "\a";
+        white-space: pre;
+    }
+    .blog-title #line3 {
+        padding-left: 25%;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    #sections .row {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*Blog ENDING*/
+
+
+/*Styles*/
+
+@font-face {
+    src: url("/assets/fonts/Zeyada-Regular.ttf");
+    font-family: zeyada;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Nav */
+
+.nav {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+.navbar {
+    background: black;
+    height: 110px;
+    align-items: baseline;
+    z-index: -1000;
+}
+#navbar li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+
+/*Page Header*/
+#page_heading {
+    margin-top: 0em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+#page_heading .row {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-table;
+}
+
+.title {
+    font-size: 42px;
+    font-family: "zeyada";
+}
+
+.subtitle {
+    font-size: 24px;
+    text-align: left;
+}
+
+
+/*Products Grid*/
+.grid-display {
+    text-align: center;
+}
+
+.grid-display .card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card-img-top {
+    height: 100%;
+}
+
+
+
+/*Styles END*/
