@@ -12,6 +12,8 @@
     background-position: 0 57%;
     height: 440px;
     background-repeat: no-repeat;
+    background-position: -90px 57%;
+    margin-top: -80px;
 }
 
 .header_fade {
@@ -32,18 +34,11 @@
 .blog-header {
     width: 100% !important;
 }
-#page_heading {
-    background-position: -90px 57%;
-    margin-top: -80px;
-}
 
 @media only screen and (min-width: 390px){
     .blog-title  {
         padding-left: 30%;
         font-size: 42px;
-    }
-    #page_heading {
-        background-position: -30px 57%;
     }
 }
 
@@ -121,17 +116,18 @@
     text-align: center;
     font-family: "Indie-Flower";
     max-height: 260px;
+    padding-bottom: 15px;
 }
 .article-nav__btn .article-nav__title {
     font-family: "Indie-Flower";
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .article-nav__img {
     border-radius: 15px;
     max-width: -webkit-fill-available;
     max-height: inherit;
-    height: 12em;
+    height: 6em;
     object-fit: cover;
     width: 100%;
 }
@@ -142,25 +138,6 @@
     background-image: -ms-linear-gradient( 45deg, rgb(0,99,163) 0%, rgb(103,198,239) 100%);  
     opacity:0.7; 
 }
-
-@media only screen and (max-width: 1158px){
-    .blog-title #line2::after {
-        content: "\a";
-        white-space: pre;
-    }
-    .blog-title #line3 {
-        padding-left: 25%;
-    }
-}
-
-@media only screen and (min-width: 576px){
-    #sections .row {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 
 /*Blog Body*/
 #blog-content p {
@@ -179,9 +156,46 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     max-height: 20em;
-    width: 70%;
-    object-fit: none;
+    width: 85%;
+    object-fit: contain;
     object-position: center;
     border-radius: 15px;
 }
+@media only screen and (min-width: 768px){
+    .blog-header__image {
+        object-fit: none;
+    }
+}
+@media only screen and (min-width: 1158px){
+    .article-nav__img {
+        height: 12em;
+    }
+    .blog-header__image {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 1158px){
+    .blog-title #line2::after {
+        content: "\a";
+        white-space: pre;
+    }
+    .blog-title #line3 {
+        padding-left: 25%;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    #sections .row {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .article-nav__btn .article-nav__title {
+        font-family: "Indie-Flower";
+        font-size: 26px;
+    }
+}
+
+

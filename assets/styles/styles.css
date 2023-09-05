@@ -11,6 +11,7 @@ html {
 
 /* Nav */
 
+
 .nav {
     padding-top: 2em;
     margin-bottom: 1em;
@@ -31,9 +32,9 @@ html {
     font-size: 22px;
     color: #fff;
 }
-
-.navbar .container-fluid {
-    padding-left: 75px;
+.nav-link:hover {
+    color: #BACDC1;
+    text-decoration: underline;
 }
 
 
@@ -79,3 +80,9 @@ html {
 }
 
 
+
+@media only screen and (min-width: 800px){
+    .navbar .container-fluid {
+        padding-left: 75px;
+    }
+}
